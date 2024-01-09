@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intermittent Fasting App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a href="#report">Report</a></li>
+        </ul>
+    </nav>
+    <div id="app">
+        <h1>Fasting Timer</h1>
+        <div id="currentDay"></div>
+        <div id="circle-progress-container">
+            <svg id="circle-progress" width="200" height="200">
+                <circle cx="100" cy="100" r="90" fill="none" stroke="#eee" stroke-width="10"/>
+                <circle cx="100" cy="100" r="90" fill="none" stroke="#da1b60" stroke-width="10" stroke-dasharray="565.48" stroke-dashoffset="0" />
+            </svg>
+            <div id="timer">
+                <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+            </div>
+        </div>
+        <button id="startButton">Start Fasting</button>
+        <button id="endButton">End Fasting</button>
+    </div>
+
+    <div id="report" style="display:none;">
+        <canvas id="fastingChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Use a modern sans-serif font */
+    background-color: #f7f7f7; /* Soft background color */
+    color: #333; /* Main text color */
+}
+
+nav {
+    background-color: #ffffff; /* White background for the nav bar */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #333; /* Primary text color */
+    text-decoration: none;
+    font-size: 1.2em; /* Slightly larger font size for navigation */
+    font-weight: bold;
+}
+
+#currentDay {
+    font-size: 1.5em; /* Larger font size for current day */
+    font-weight: bold; /* Bold font */
+    color: #333; /* Primary text color */
+    padding: 15px 0; /* Spacing above and below the text */
+    margin-bottom: 20px; /* Spacing for layout */
+    text-align: center;
+}
+
+#app {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for the app */
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    font-size: 1em; /* Default font size */
+}
+
+button {
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; /* Rounded corners for buttons */
+    background: linear-gradient(45deg, #ff8a00, #da1b60); /* Gradient background */
+    color: white; /* White text for buttons */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Button shadow for depth */
+    font-weight: bold; /* Bold font for button text */
+    margin: 20px 10px 10px 30px/* Spacing for layout */
+
+}
+
+button:active {
+    box-shadow: none; /* Remove shadow when button is clicked */
+}
+
+#circle-progress-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+#timer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    font-weight: bold;
+}
+
+circle {
+    transition: stroke-dashoffset 0.5s ease-out;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
+
+
+
+#report {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
